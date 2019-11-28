@@ -48,10 +48,12 @@ end
   
    Row 0 has [:director=>"Martin_Scoressee", :total =>950000, :director =>"Quinten_Tarentino", :total=>800000, :director =>"Spike_Lee",:total =>400000,:director =>"Tyler_Perry", :total =>"700000", :director =>"Steven_Speilberg", "total"=>600000] 
           Coordinate [0, 0] points to an Array of length 5
-         (0, 0,5) is: {:name=>"Quinten_Tarentino", :price=>3}
-         (0, 0, 4) is: {:name=>"Pistachio Cookies", :price=>3}
-         (0, 0, 4) is: {:name=>"Chocolate Cookies", :price=>3}
-         (0, 0, 4) is: {:name=>"Chocolate Chip Cookies", :price=>3}
+         (0, 0,5) is: {:name =>"Martin_Scoressee", :price =>0}
+         (0, 1, 5) is: {:name =>"Quinten_Tarentino", :price =>1}
+         (0, 2, 5) is: {:name =>"Spike Lee", :price =>2}
+         (0, 3, 5) is: {:name =>"Tyler_Perry", :price =>3}
+         (0,4,5) is: {:name =>"Steven Speilberg", :price =>4}
+         
    # Use loops, variables and the accessing method, [], to loop through the NDS
   # and total up all the
   # ...
