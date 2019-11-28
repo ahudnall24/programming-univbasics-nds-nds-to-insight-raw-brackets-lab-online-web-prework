@@ -47,13 +47,34 @@ def directors_totals(nds)
 end
   
    Row 0 has [:director=>"Martin_Scoressee", :total =>950000, :director =>"Quinten_Tarentino", :total=>800000, :director =>"Spike_Lee",:total =>400000,:director =>"Tyler_Perry", :total =>"700000", :director =>"Steven_Speilberg", "total"=>600000] 
-          Coordinate [0, 0] points to an Array of length 5
-         (0, 0,5) is: {:name =>"Martin_Scoressee", :price =>0}
-         (0, 1, 5) is: {:name =>"Quinten_Tarentino", :price =>1}
-         (0, 2, 5) is: {:name =>"Spike Lee", :price =>2}
-         (0, 3, 5) is: {:name =>"Tyler_Perry", :price =>3}
-         (0,4,5) is: {:name =>"Steven Speilberg", :price =>4}
+          Coordinate [0, 0] points to an Array of length 4
+         (0, 0,4) is: {:director =>"Martin_Scoressee", :total =>0}
+         (0, 1, 4) is: {:director =>"Quinten_Tarentino", :total =>1}
+         (0, 2, 4) is: {:director =>"Spike Lee", :total =>2}
+         (0, 3, 4) is: {:director =>"Tyler_Perry", :total =>3}
+         (0,4,4) is: {:director =>"Steven Speilberg", :total =>4}
          
+   
+   
+   grand_total = 0
+row_index = 0
+while row_index < vm.length do
+  column_index = 0
+  while column_index < vm[row_index].length do
+    inner_len = vm[row_index][column_index].length
+    inner_index = 0
+    while inner_index < inner_len do
+       spinner is full of Hashes with keys :director and :total
+      grand_total += vm[row_index][column_index][inner_index][:total]
+      inner_index += 1
+    end
+    column_index += 1
+  end
+  row_index += 1
+end
+ 
+p grand_total #=> 2,275,000
+   
    # Use loops, variables and the accessing method, [], to loop through the NDS
   # and total up all the
   # ...
